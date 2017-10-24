@@ -1,6 +1,5 @@
 html {
   font-size: 62.5%;
-    display: block;
 }
 
 /**************************************/
@@ -44,6 +43,12 @@ header .sp_navi_li li a {
   font-size: 14px;
   text-decoration: none;
 }
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
 @media (min-width: 550px) {
   header .sp_navi {
     display: none;
@@ -190,6 +195,8 @@ header .sp_navi_li li a {
     #news_area .container{padding:0px 10% 50px 10%
     }
   }
+
+  
   #news_area .news_title{
     text-align:center;
     font-size:26px;
@@ -199,6 +206,7 @@ header .sp_navi_li li a {
     letter-spacing:0.2rem}
   
   #news_area .news_lists li{
+    padding-left: 0;
     list-style:none;
     font-size:15px;
     font-size:1.5rem
@@ -316,10 +324,7 @@ header .sp_navi_li li a {
       margin-top:30px;
     }
   }
-  h2{
-    margin:0;
-    padding:0;
-  }
+ 
   #sub_cover{
     padding:40px 0;
     background-image:url("../images/news/sub_cover.jpg");
@@ -387,16 +392,24 @@ header .sp_navi_li li a {
 list-style:none
 }
 
-#contents #main .news_li li span{
-color:#42b9d0;
-display:block;
-font-weight:bold;
-margin-bottom:3px
+#contents #main .news_li li span {
+    color: #42b9d0;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 3px;
 }
+
 @media (min-width: 550px){#contents #main .news_li li{
 list-style:none;
 padding-bottom:5px
 }
+
+
+#contents #main .news_li {
+    font-size: 15px;
+    font-size: 1.5rem;
+}
+
 
 #contents #main .news_li li span{
 display:inline-block;
@@ -414,15 +427,6 @@ display:none
 }
 }
 
-ul, menu, dir {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
-}
 
 #contents #sidebar .pc_sidemenu h3{
 color:#42b9d0;
@@ -476,3 +480,4 @@ font-size:1.4rem
 #contents #main th{
 padding-right:20px;
 }
+
